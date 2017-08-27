@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!--
+  TODO - restructure to controller/view layout? or js/css layout?
+  TOOD - dynamically select coins to view/add
+  -->
+    <title>Crypto Viewer Wallet</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+  </head>
+<body>
+   <div class="window">
+
+<!--
+      <header class="toolbar toolbar-header">
+        <h1 class="title">Title</h1>
+      </header>
+-->
+
+      <div class="window-content">
+        <div class="pane-group">
+          <div class="pane pane-sm sidebar">
+            <nav class="nav-group">
+              <h5 class="nav-group-title">Currencies</h5>
+              <span id="dash" class="nav-group-item active"><span class="icon icon-home"></span>Dash</span>
+              <span id="btc" class="nav-group-item"><span class="icon icon-home"></span>Bitcoin</span>
+              <span id="xrp" class="nav-group-item"><span class="icon icon-home"></span>Ripple</span>
+              <span id="eth" class="nav-group-item"><span class="icon icon-home"></span>Ethereum</span>
+            </nav>
+          </div>
+          <div class="pane">
+            <div id="addrType">dash</div>
+            <div id="addrFieldLabel">address:</div>
+            <input id="addrField" type="text" name="addr" size="45">
+<!--
+            <div id="addrFieldListContainer">
+              <select id="addrFieldList">
+                <option value="dash">dash</option>
+                <option value="xrp">xrp</option>
+                <option value="btc">btc</option>
+                <option value="eth">eth</option>
+              </select>
+            </div>
+-->
+            <input id="submitBtn" type="submit" value="Submit" onclick="getBalance();">
+            <br /><br /><div>Balance:</div><div id="addrBalance"></div>
+            <br /><div>Transactions:</div><div id="transactions"></div>
+            <br /><div>Summary:</div><div id="summary"></div>
+          </div>
+        </div>
+      </div>
+
+<!--
+
+    <div id="calcs">
+       <p class="title">Crypto Management</p>
+
+       <div> Dash Address:</div>
+       <input id="addrField" type="text" name="addr" size="45"> <input id="submitBtn" type="submit" value="Submit" onclick="getBalance();">
+-->
+<!--        <input type="text" name="addr" maxlength="4" size="4"><br> <input type="submit" value="Submit">
+ -->
+<!--        <textarea cols="90" rows="1" charswidth="23" name="text_body" style="resize:vertical" id="pad" autofocus=""></textarea>
+ -->
+<!--        <textarea id="pad" autofocus></textarea> -->
+
+
+
+<!--
+       </br><br />
+       <div>Response:</div>
+       <div id="answer"></div>
+-->
+   </div>
+</body>
+</html>

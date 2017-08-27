@@ -1,0 +1,68 @@
+Jaxx:
+	Left Panel
+		level 0 - small scroll of coins
+		level 1 - send/receive exchange
+		level 2 - public address
+		level 3 - balance with USD
+		level 4 - QR image
+	Right Panel:
+		list of transactions
+
+	Settings far right/hidden
+
+Exodus:
+	Left Panel:
+		Portfolio
+		Wallet
+		Exchange
+		Backup
+		Settings
+
+	Middle Panel:
+		List of coins (Dash, Bitcoin)
+
+	Right Panel:
+	  	button send/recieve
+	  	number of coins
+	  	balance in USD?
+	  	list of transactions
+
+	 Portfolio:
+	 	pie chart of distribution
+	 	section with each coin, % of portfolio, name, $$ in USD/BTC or count of each coin
+
+
+
+
+
+
+Crypto-Management (view only wallet):
+
+	Features:
+		Balance coin count
+		Balance in fiat
+		List of transactions
+		Purchase price per transaction
+		Cost basis per coin
+
+
+	left panel/hidden:
+		Settings
+		Backup/Export
+		Restore/Import
+
+	main panel:
+		line graph (two graphs?)
+			- per coin $ amount/ cost basis?
+			- rollup of coins cost basis and value
+		table
+			coin name/ticker - cost basis, value, price, units, change units/change in price
+
+	wallets/addresses
+		two columns
+		1:
+			coin name with expandable to list addresses
+		2:
+			clicking coin name - brings up summary of coin
+			clicking address - brings up summary for that address with transactions
+	First out
