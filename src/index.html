@@ -24,10 +24,12 @@
           <div class="pane pane-sm sidebar">
             <nav class="nav-group">
               <h5 class="nav-group-title">Currencies</h5>
-              <span id="dash" class="nav-group-item active"><span class="icon icon-home"></span>Dash</span>
-              <span id="btc" class="nav-group-item"><span class="icon icon-home"></span>Bitcoin</span>
-              <span id="xrp" class="nav-group-item"><span class="icon icon-home"></span>Ripple</span>
-              <span id="eth" class="nav-group-item"><span class="icon icon-home"></span>Ethereum</span>
+              <!-- TODO dynamically load this list!!!!!!-->
+              <span id="dash" class="crypto-entry nav-group-item active"><span class="icon icon-home"></span>Dash</span>
+              <span id="btc" class="crypto-entry nav-group-item"><span class="icon icon-home"></span>Bitcoin</span>
+              <span id="eth" class="crypto-entry nav-group-item"><span class="icon icon-home"></span>Ethereum</span>
+              <span id="xrp" class="crypto-entry nav-group-item "><span class="icon icon-home"></span>Ripple</span>
+
             </nav>
           </div>
           <div class="pane pane-data">
@@ -35,16 +37,6 @@
             <div id="addrType">dash</div>
             <div id="addrFieldLabel">address:</div>
             <input id="addrField" type="text" name="addr" size="45">
-<!--
-            <div id="addrFieldListContainer">
-              <select id="addrFieldList">
-                <option value="dash">dash</option>
-                <option value="xrp">xrp</option>
-                <option value="btc">btc</option>
-                <option value="eth">eth</option>
-              </select>
-            </div>
--->
             <input id="submitBtn" type="submit" value="Submit" onclick="getBalance();">
             <br /><br /><div>Balance:</div><div id="addrBalance"></div>
             <section>
@@ -95,7 +87,6 @@
                     <tr>
                       <th>Date</th>
                       <th>Amount</th>
-        <!--               <th>Amount(Long)</th>       -->
                       <th>Close ($)</th>
                       <th>Cost Basis</th>
                       <th>Current Value</th>
@@ -115,28 +106,6 @@
           </div>
         </div>
       </div>
-
-<!--
-
-    <div id="calcs">
-       <p class="title">Crypto Management</p>
-
-       <div> Dash Address:</div>
-       <input id="addrField" type="text" name="addr" size="45"> <input id="submitBtn" type="submit" value="Submit" onclick="getBalance();">
--->
-<!--        <input type="text" name="addr" maxlength="4" size="4"><br> <input type="submit" value="Submit">
- -->
-<!--        <textarea cols="90" rows="1" charswidth="23" name="text_body" style="resize:vertical" id="pad" autofocus=""></textarea>
- -->
-<!--        <textarea id="pad" autofocus></textarea> -->
-
-
-
-<!--
-       </br><br />
-       <div>Response:</div>
-       <div id="answer"></div>
--->
    </div>
 </body>
 </html>
